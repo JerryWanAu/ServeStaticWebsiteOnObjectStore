@@ -6,6 +6,8 @@ This is to serve a static website from c@e with object store, no backend require
 
 https://strongly-credible-bass.edgecompute.app/index.html is a static website totally served from object store.
 
+fadfasdf
+
 # Object Store Rust Template
 
 Fastly Object Store is a globally consistent key-value storage accessible across the Fastly Network. This makes it possible for your Compute@Edge application to read and write from Object-stores. The application shows how to use Fastly Object Store within a Rust Compute@Edge application.

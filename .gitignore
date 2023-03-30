@@ -2,3 +2,5 @@
 **/*.rs.bk
 /bin
 /pkg
+/.idea
+cargo.lock

@@ -6,7 +6,7 @@ description = ""
 language = "rust"
 manifest_version = 2
 name = "StaticWebsiteWithObjectStore"
-service_id = "cPZLaUmeoZxcJfcdVgAdS7"
+service_id = ""
 
 [scripts]
   build = "cargo build --bin fastly-compute-project --release --target wasm32-wasi --color always"
@@ -20,4 +20,4 @@ service_id = "cPZLaUmeoZxcJfcdVgAdS7"
 [setup]
 [setup.object_stores]
 [setup.object_stores.my-store]
-  description = "My first object store"
+  description = "My object store"

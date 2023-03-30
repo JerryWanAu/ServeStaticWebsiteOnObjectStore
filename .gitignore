@@ -3,5 +3,3 @@
 /bin
 /pkg
 /.idea
-Cargo.lock
-.DS_Store

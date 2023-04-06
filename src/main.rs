@@ -10,6 +10,7 @@ fn main(req: Request) -> Result<Response, Error> {
         ObjectStore::open("my_store").map(|store| store.expect("ObjectStore exists"))?;
     
     return match req.get_path() {
+        // for testing on local server
         "/readme" => {
             let entry = store.lookup("readme")?;
 

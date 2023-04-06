@@ -19,13 +19,11 @@ storeid = os.environ.get('objectstoreid')
 
 #upload all the files to the object store specified
 for name in filelist:
-    # hash relative path into objectkey
+    # get relative path as the object key
     uploadfiles = name
-    name =name.replace(path, "")
-    hash_obj = hashlib.md5(name.encode())
-    objectkey = hash_obj.hexdigest()
+    objectkey =name.replace(path, "")
     print(name, "->", objectkey)
     # upload file with the hashed objectkey
     myurl = 'https://api.fastly.com/resources/stores/object/' + storeid + '/keys/' + objectkey
-    getdata = requests.put(myurl, data=open(uploadfiles, 'rb'), headers = headers)
+    requests.put(myurl, data=open(uploadfiles, 'rb'), headers = headers)
 

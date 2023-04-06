@@ -11,7 +11,3 @@ debug = 1
 
 [dependencies]
 fastly = "^0.8.6"
-crypto = "0.4.0"
-md-5 = "0.10.5"
-hex-literal = "0.3.4"
-hex = "0.4.3"

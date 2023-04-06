@@ -3,4 +3,5 @@
 /bin
 /pkg
 /.idea
+/backup
 Cargo.lock

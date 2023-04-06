@@ -6,18 +6,18 @@ description = ""
 language = "rust"
 manifest_version = 2
 name = "StaticWebsiteWithObjectStore"
-service_id = ""
+service_id = "cPZLaUmeoZxcJfcdVgAdS7"
 
 [scripts]
   build = "cargo build --bin fastly-compute-project --release --target wasm32-wasi --color always"
 
-[local_server]
-[local_server.object_store]
-[[local_server.object_store.my-store]]
-  key = "readme"
-  path = "./README.md"
-
 [setup]
 [setup.object_stores]
-[setup.object_stores.my-store]
+[setup.object_stores.my_store]
   description = "My object store"
+
+[local_server.object_stores]
+my_store = [
+  {key = "readme", path = "./README.md"},
+  {key = "second", data = "This is some data"}
+]

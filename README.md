@@ -8,8 +8,15 @@ Object store hold object with an object key as the index, no folder structure. S
 
 https://strongly-credible-bass.edgecompute.app/index.html is a static website totally served from object store.
 
-# Object Store Rust
+# Object Store
 
 Fastly Object Store is a globally consistent key-value storage accessible across the Fastly Network. This makes it possible for your Compute@Edge application to read and write from Object-stores. The application shows how to use Fastly Object Store within a Rust Compute@Edge application.
 https://developer.fastly.com/reference/api/services/resources/object-store/
+
+# Object Store Rust SDK
+
 https://docs.rs/fastly/latest/fastly/object_store/index.html
+
+# Fastly Rust SDK
+
+https://docs.rs/fastly/latest/fastly/index.html#
